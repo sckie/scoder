@@ -35,6 +35,7 @@ public:
         ItemType_Line = UserType,
         ItemType_Drawer,
         ItemType_Folder,
+        ItemType_Movie,
         ItemType_UserType,
     };
     Q_ENUMS(ItemType)

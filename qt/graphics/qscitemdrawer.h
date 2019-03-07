@@ -24,8 +24,8 @@ public:
     bool addIcon(const QString &comm, const QStringList &states, const QString &tip = "");
     void setControlVisible(bool visible);
     void setCurrentIndex(int index);
-    void setItemVisible(const QString &comm, bool visible);
-    void setItemTip(const QString &comm, const QString &tip);
+    void setVisible(const QString &comm, bool visible);
+    void setTooltip(const QString &comm, const QString &tip);
 
 public:
     virtual bool clear();

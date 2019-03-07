@@ -196,6 +196,8 @@ bool QScItemLine::updateAt(int index, const QPointF &point)
     }
 
     p->points[index] = point;
+    update();
+
     return true;
 }
 

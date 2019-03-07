@@ -228,7 +228,7 @@ bool QScItemDrawer::addIcon(const QString &comm, const QStringList &states, cons
 
 void QScItemDrawer::setControlVisible(bool visible)
 {
-    setItemVisible(s_ctrl_comm, visible);
+    setVisible(s_ctrl_comm, visible);
 }
 
 void QScItemDrawer::setCurrentIndex(int index)
@@ -267,7 +267,7 @@ void QScItemDrawer::setCurrentIndex(int index)
     }
 }
 
-void QScItemDrawer::setItemVisible(const QString &comm, bool visible)
+void QScItemDrawer::setVisible(const QString &comm, bool visible)
 {
     for (int index = 0; index < p->states.count(); index++)
     {
@@ -289,7 +289,7 @@ void QScItemDrawer::setItemVisible(const QString &comm, bool visible)
     }
 }
 
-void QScItemDrawer::setItemTip(const QString &comm, const QString &tip)
+void QScItemDrawer::setTooltip(const QString &comm, const QString &tip)
 {
     foreach (const QScItemDrawerPrivate::SIconState &state, p->states)
     {

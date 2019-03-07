@@ -33,10 +33,10 @@ QScItemFolder::QScItemFolder(const QPointF &point,
 
     updatePaths(point, size);
 
-    setFlags(QGraphicsItem::ItemIsSelectable |
-             QGraphicsItem::ItemSendsGeometryChanges |
-             QGraphicsItem::ItemIsMovable |
-             QGraphicsItem::ItemIsFocusable);
+    setFlags(ItemIsSelectable |
+             ItemSendsGeometryChanges |
+             ItemIsMovable |
+             ItemIsFocusable);
 
     setZValue(101);
 
