@@ -67,6 +67,7 @@ void QScItemMovie::paint(QPainter *painter, const QStyleOptionGraphicsItem *opti
     Q_UNUSED(widget)
 
     QRectF rect = boundingRect();
+    painter->setRenderHints(QPainter::SmoothPixmapTransform);
     painter->setClipPath(shape());
 
     painter->setFont(font());
@@ -84,6 +85,11 @@ void QScItemMovie::paint(QPainter *painter, const QStyleOptionGraphicsItem *opti
 QString QScItemMovie::errorString() const
 {
     return p->error;
+}
+
+QList<QByteArray> QScItemMovie::supportFormats() const
+{
+    return QMovie::supportedFormats();
 }
 
 QMovie* QScItemMovie::movie() const

@@ -21,6 +21,7 @@ public:
 
 public:
     QString errorString() const;
+    QList<QByteArray> supportFormats() const;
 
     QMovie* movie() const;
     void setMovie(const QString &movie);

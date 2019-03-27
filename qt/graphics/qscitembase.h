@@ -36,6 +36,7 @@ public:
         ItemType_Drawer,
         ItemType_Folder,
         ItemType_Movie,
+        ItemType_Video,
         ItemType_UserType,
     };
     Q_ENUMS(ItemType)
